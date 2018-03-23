@@ -1,3 +1,5 @@
 module.exports = {
-  Book: require("./book")
+  Artist: require("./artist")
+  Artwork: require("./artwork")
+  User: require("./user")
 };
