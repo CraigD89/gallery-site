@@ -1,19 +1,15 @@
-import React from "react";
+import React from 'react';
+import AppBar from 'material-ui/AppBar';
 
-const Nav = () =>
-  <nav className="navbar navbar-inverse navbar-top">
-    <div className="container-fluid">
-      <div className="navbar-header">
-        <button type="button" className="collapsed navbar-toggle">
-          <span className="sr-only">Toggle navigation</span>
-          <span className="icon-bar" /> <span className="icon-bar" />
-          <span className="icon-bar" />
-        </button>
-        <a href="/" className="navbar-brand">
-          React Reading List
-        </a>
-      </div>
-    </div>
-  </nav>;
+/**
+ * A simple example of `AppBar` with an icon on the right.
+ * By default, the left icon is a navigation-menu.
+ */
+const Nav = () => (
+  <AppBar
+    title="Efrain Lopez Gallery"
+    iconClassNameRight="muidocs-icon-navigation-expand-more"
+  />
+);
 
 export default Nav;
