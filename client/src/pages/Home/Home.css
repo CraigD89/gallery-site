@@ -1,0 +1,24 @@
+.current {
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  height: 100vh;
+}
+
+.news {
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  height: 50vh;
+}
+
+.upcoming {
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+  height: 50vh;
+}
+
+img{
+    height: 500px;
+}
