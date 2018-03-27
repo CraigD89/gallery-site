@@ -1,13 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "material-ui/styles";
-// import Paper from 'material-ui/Paper';
 import Grid from "material-ui/Grid";
 import "./Home.css";
 // import { Link } from "react-router-dom";
-// import CurrentShow from "./CurrentShow/CurrentShow";
-// import News from "./News/News";
-// import Upcoming from "./Upcoming/Upcoming";
+
 
 const styles = theme => ({
   root: {
@@ -29,8 +26,11 @@ function FullWidthGrid(props) {
         <Grid item xs={12} md={6}>
           <div className="current">
             <h1>CURRENT EXHIBITION</h1>
-            <img src="https://i.imgur.com/oLBgYdk.jpg" alt="art" />
-            <h1>MELISSA LEANDRO</h1>
+            <img
+              src="https://i.imgur.com/Ma5rxnt.jpg"
+              alt="art"
+            />
+            <h1>ALEJANDRO JIMENEZ-FLORES</h1>
           </div>
         </Grid>
         <Grid item xs={12} md={6}>

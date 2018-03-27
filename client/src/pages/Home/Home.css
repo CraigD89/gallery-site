@@ -2,23 +2,23 @@
   text-align: center;
   border-style: solid;
   border-width: 1px;
-  height: 100vh;
+  height: 90vh;
 }
 
 .news {
   text-align: center;
   border-style: solid;
   border-width: 1px;
-  height: 50vh;
+  height: 45vh;
 }
 
 .upcoming {
   text-align: center;
   border-style: solid;
   border-width: 1px;
-  height: 50vh;
+  height: 44.7vh;
 }
 
-img{
-    height: 500px;
+img {
+  height: 500px;
 }
