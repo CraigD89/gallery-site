@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { withStyles } from "material-ui/styles";
-import Grid from "material-ui/Grid";
 import "./Nav.css";
+import Grid from "material-ui/Grid";
 import IconButton from "material-ui/Icon";
-import Drawer from 'material-ui/Drawer';
-import List from 'material-ui/List';
+// import SideNav from "./SideNav";
+// import Login from "./Login";
 
 // import { Link } from "react-router-dom";
 
@@ -26,24 +26,23 @@ function FullWidthGrid(props) {
   return (
     <div className={classes.root}>
       <Grid container spacing={0} className="navigation">
-        {/* <Grid item xs={12} md={12}> */}
-          {/* <div className="navigation"> */}
-            <Grid item xs>
-              <IconButton className={classes.icon} style={{ fontSize: 30 }}>
-                view_headline
-              </IconButton>
-            </Grid>
-            <Grid item xs={8}>
-              <h1>EFRAIN LOPEZ GALLERY</h1>
-            </Grid>
-            <Grid item xs>
-              <IconButton className={classes.icon} style={{ fontSize: 30 }}>
-                account_circle
-              </IconButton>
-            </Grid>
-          {/* </div> */}
+        <Grid item xs>
+          <IconButton className={classes.icon} style={{ fontSize: 30 }}>
+            view_headline
+            {/* <SideNav /> */}
+          </IconButton>
         </Grid>
-      {/* </Grid> */}
+        <Grid item xs={8}>
+          <h1>EFRAIN LOPEZ GALLERY</h1>
+        </Grid>
+
+        <Grid item xs>
+          <IconButton className={classes.icon} style={{ fontSize: 30 }}>
+            account_circle
+            {/* <Login /> */}
+          </IconButton>
+        </Grid>
+      </Grid>
     </div>
   );
 }
