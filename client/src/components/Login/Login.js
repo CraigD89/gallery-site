@@ -5,7 +5,7 @@ import Dialog, {
   DialogActions,
   DialogContent,
 //   DialogContentText,
-  DialogTitle,
+  // DialogTitle,
 } from 'material-ui/Dialog';
 
 export default class FormDialog extends React.Component {

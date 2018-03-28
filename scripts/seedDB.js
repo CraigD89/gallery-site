@@ -132,14 +132,26 @@ const userSeed = [
   }
 ];
 
-// db.Book
-//   .remove({})
-//   .then(() => db.Book.collection.insertMany(bookSeed))
-//   .then(data => {
-//     console.log(data.insertedIds.length + " records inserted!");
-//     process.exit(0);
-//   })
-//   .catch(err => {
-//     console.error(err);
-//     process.exit(1);
-//   });
+db.Artist
+  .remove({})
+  .then(() => db.Artist.collection.insertMany(artistSeed))
+  .then(data => {
+    console.log(data.insertedIds.length + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
+
+  db.Artwork
+  .remove({})
+  .then(() => db.Artwork.collection.insertMany(artworkSeed))
+  .then(data => {
+    console.log(data.insertedIds.length + " records inserted!");
+    process.exit(0);
+  })
+  .catch(err => {
+    console.error(err);
+    process.exit(1);
+  });
