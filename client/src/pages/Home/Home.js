@@ -25,20 +25,20 @@ function FullWidthGrid(props) {
       <Grid container spacing={0}>
         <Grid item xs={12} md={6}>
           <div className="current">
-            <h1>CURRENT EXHIBITION</h1>
+            <h2>CURRENT EXHIBITION</h2>
             <img
               src="https://i.imgur.com/Ma5rxnt.jpg"
               alt="art"
             />
-            <h1>ALEJANDRO JIMENEZ-FLORES</h1>
+            <h2>ALEJANDRO JIMENEZ-FLORES</h2>
           </div>
         </Grid>
         <Grid item xs={12} md={6}>
           <div className="news">
-            <h1>NEWS</h1>
+            <h2>NEWS</h2>
           </div>
           <div className="upcoming">
-            <h1>UPCOMING</h1>
+            <h2>UPCOMING</h2>
           </div>
         </Grid>
       </Grid>

@@ -28,7 +28,7 @@ function FullWidthGrid(props) {
       <Grid container spacing={0}>
         <Grid item xs={12} md={6}>
           <div className="contact">
-            <h1>ABOUT</h1>
+            <h2>ABOUT</h2>
             <h4>
               Efrain Lopez Gallery is a contemporary art gallery in Chicago, IL.
               The gallery is committed to showcasing work by emerging and
@@ -38,20 +38,20 @@ function FullWidthGrid(props) {
             </h4>
           </div>
           <div className="contact">
-            <h1>ADDRESS</h1>
+            <h2>ADDRESS</h2>
             <h4>908 North Ashland Avenue</h4>
             <h4>Chicago, IL 60622</h4>
           </div>
         </Grid>
         <Grid item xs={12} md={6}>
           <div className="contact">
-            <h1>HOURS</h1>
+            <h2>HOURS</h2>
             <h4>Wednesday - Friday 12pm- 5pm</h4>
             <h4>Saturday 12pm - 4pm</h4>
             <h4>by appointment</h4>
           </div>
           <div className="contact">
-            <h1>CONTACT</h1>
+            <h2>CONTACT</h2>
             <h4>info@efrainlopezgallery.com</h4>
             <h4>+1.312.783.1084</h4>
           </div>

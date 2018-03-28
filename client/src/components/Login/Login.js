@@ -4,7 +4,7 @@ import TextField from 'material-ui/TextField';
 import Dialog, {
   DialogActions,
   DialogContent,
-  DialogContentText,
+//   DialogContentText,
   DialogTitle,
 } from 'material-ui/Dialog';
 
@@ -24,33 +24,40 @@ export default class FormDialog extends React.Component {
   render() {
     return (
       <div>
-        <Button onClick={this.handleClickOpen}>Open form dialog</Button>
+        <Button onClick={this.handleClickOpen}>LOGIN</Button>
         <Dialog
           open={this.state.open}
           onClose={this.handleClose}
           aria-labelledby="form-dialog-title"
         >
-          <DialogTitle id="form-dialog-title">Subscribe</DialogTitle>
+          {/* <DialogTitle id="form-dialog-title">LOGIN</DialogTitle> */}
           <DialogContent>
-            <DialogContentText>
-              To subscribe to this website, please enter your email address here. We will send
-              updates occationally.
-            </DialogContentText>
+            {/* <DialogContentText>
+              Blahlsahdlkajsxlca
+            </DialogContentText> */}
             <TextField
-              autoFocus
+            //   autoFocus
               margin="dense"
-              id="name"
-              label="Email Address"
-              type="email"
+              id="username"
+              label="Username"
+              type="string"
+              fullWidth
+            />
+            <TextField
+            //   autoFocus
+              margin="dense"
+              id="password"
+              label="Password"
+              type="string"
               fullWidth
             />
           </DialogContent>
           <DialogActions>
             <Button onClick={this.handleClose} color="primary">
-              Cancel
+              LOGIN
             </Button>
             <Button onClick={this.handleClose} color="primary">
-              Subscribe
+              SIGN UP
             </Button>
           </DialogActions>
         </Dialog>
