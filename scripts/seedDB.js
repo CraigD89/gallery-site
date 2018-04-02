@@ -13,7 +13,7 @@ mongoose.connect(
 
 const artistSeed = [
   {
-    name: "Amalie Jakobsen",
+    name: "AMALIE JAKOBSEN",
     location: "Berlin",
     website: "http://www.amaliejakobsen.com/",
     bio: "Lives and works in Berlin, Germany",
@@ -27,7 +27,7 @@ const artistSeed = [
     imageURL: "https://i.imgur.com/BzIVFfK.jpg"
   },
   {
-    name: "Lisa Kirk",
+    name: "LISA KIRK",
     location: "Woodstock",
     website: "https://www.lisakirkprojects.com/",
     bio: "Lives and works in New York, NY",
@@ -40,7 +40,7 @@ const artistSeed = [
     imageURL: "https://i.imgur.com/yeATvN8.jpg"
   },
   {
-    name: "Melissa Leandro",
+    name: "MELISSA LEANDRO",
     location: "Chicago",
     website: "http://melissaleandro.com/home.html",
     bio: "Lives and works in Chicago, IL",

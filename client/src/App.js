@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import Artists from "./pages/Artists";
 import ArtistsDetail from "./pages/ArtistsDetail";
+import ArtDocs from "./pages/ArtDocs";
 import Contact from "./pages/Contact";
 import Nav from "./components/Nav";
 
@@ -22,6 +23,8 @@ const App = () => (
             <Route exact path="/artists/:id" component={ArtistsDetail} />
             {/* <Route exact path="/artistsdetail" component={ArtistsDetail} /> */}
             <Route exact path="/contact" component={Contact} />
+            <Route exact path="/artdocs" component={ArtDocs} />
+
           </Switch>
         {/* </Wrapper> */}
       </div>
