@@ -1,5 +1,5 @@
 module.exports = {
   Artist: require("./artist"),
-  Artwork: require("./artwork"),
+  // Artwork: require("./artwork"),
   User: require("./user")
 };
