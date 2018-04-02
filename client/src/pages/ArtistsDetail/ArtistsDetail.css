@@ -9,7 +9,7 @@
     text-align: center;
     border-style: solid;
     border-width: 1px;
-    height: 45vh;
+    height: 44.7vh;
     position: relative;
   }
   
@@ -25,7 +25,7 @@
     height: 500px;
   }
   
-  .newsFeed, .upcomingFeed {
+  .newsFeed, .bioinfo {
     display: inline-block;
     vertical-align: middle;
     position: absolute;
