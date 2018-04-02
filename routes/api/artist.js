@@ -9,8 +9,8 @@ router.route("/")
 // Matches with "/api/books/:id"
 router
   .route("/:id")
-  .get(artistController.findById)
-  .put(artistController.update)
-  .delete(artistController.remove);
+  .get(artistController.findById);
+  // .put(artistController.update)
+  // .delete(artistController.remove);
 
 module.exports = router;
