@@ -1,10 +1,6 @@
 import React, { Component } from "react";
-// import PropTypes from "prop-types";
-// import { withStyles } from "material-ui/styles";
 import Grid from "material-ui/Grid";
 import "./ArtDocs.css";
-// import API from "../../utils/API";
-// import { Link } from "react-router-dom";
 import pdf1 from "../../pdf/AJPR.pdf";
 import pdf2 from "../../pdf/AJChecklist.pdf";
 import pdf3 from "../../pdf/LKPR.pdf";
