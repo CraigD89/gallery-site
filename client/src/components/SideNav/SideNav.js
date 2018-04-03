@@ -3,9 +3,6 @@ import PropTypes from "prop-types";
 import { withStyles } from "material-ui/styles";
 import Drawer from "material-ui/Drawer";
 import Button from "material-ui/Button";
-// import List from 'material-ui/List';
-// import Divider from "material-ui/Divider";
-// import { mailFolderListItems, otherMailFolderListItems } from './tileData';
 
 const styles = {
   list: {
@@ -38,15 +35,10 @@ class TemporaryDrawer extends React.Component {
     const fullList = (
       <div className={classes.fullList}>
         <Button href="/">HOME</Button>
-        {/* <Divider /> */}
         <Button href="/artists">ARTISTS</Button>
-        {/* <Divider /> */}
         <Button disabled>EXHIBITIONS</Button>
-        {/* <Divider /> */}
         <Button disabled>FAIRS</Button>
-        {/* <Divider /> */}
         <Button disabled>NEWS</Button>
-        {/* <Divider /> */}
         <Button href="/contact">CONTACT</Button>
       </div>
     );
