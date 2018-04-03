@@ -8,6 +8,7 @@ import Dialog, {
   // DialogTitle,
 } from "material-ui/Dialog";
 import API from "../../utils/API";
+import { Link } from "react-router-dom";
 
 export default class FormDialog extends React.Component {
   state = {
@@ -47,7 +48,9 @@ export default class FormDialog extends React.Component {
         email: this.state.email,
         password: this.state.password
       }).catch(err => console.log(err));
-    }
+    };
+    this.setState({ open: false });
+
   };
 
   render() {
@@ -84,14 +87,12 @@ export default class FormDialog extends React.Component {
           <DialogActions>
             <Button
               onClick={this.handleFormSubmit}
-              // onSubmit={this.handleFormSubmit}
               color="primary"
             >
-              LOGIN
+              <Link to={"/artdocs/"}>LOGIN</Link>
             </Button>
             <Button
               onClick={this.handleFormSubmit}
-              // onSubmit={this.handleFormSubmit}
               color="primary"
             >
               SIGN UP
