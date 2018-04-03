@@ -1,16 +1,19 @@
-import React from 'react';
-import Button from 'material-ui/Button';
-import TextField from 'material-ui/TextField';
+import React from "react";
+import Button from "material-ui/Button";
+import TextField from "material-ui/TextField";
 import Dialog, {
   DialogActions,
-  DialogContent,
-//   DialogContentText,
+  DialogContent
+  //   DialogContentText,
   // DialogTitle,
-} from 'material-ui/Dialog';
+} from "material-ui/Dialog";
+import API from "../../utils/API";
 
 export default class FormDialog extends React.Component {
   state = {
     open: false,
+    email: "",
+    password: ""
   };
 
   handleClickOpen = () => {
@@ -19,6 +22,32 @@ export default class FormDialog extends React.Component {
 
   handleClose = () => {
     this.setState({ open: false });
+  };
+
+  //Login post to DB
+  validateForm() {
+    return this.state.email.length > 0;
+  }
+
+  handleChange = event => {
+    this.setState({
+      [event.target.id]: event.target.value
+    });
+    console.log(this.state);
+  };
+
+  handleSubmit = event => {
+    event.preventDefault();
+  };
+
+  handleFormSubmit = event => {
+    event.preventDefault();
+    if (this.state.email) {
+      API.saveUser({
+        email: this.state.email,
+        password: this.state.password
+      }).catch(err => console.log(err));
+    }
   };
 
   render() {
@@ -30,21 +59,21 @@ export default class FormDialog extends React.Component {
           onClose={this.handleClose}
           aria-labelledby="form-dialog-title"
         >
-          {/* <DialogTitle id="form-dialog-title">LOGIN</DialogTitle> */}
           <DialogContent>
-            {/* <DialogContentText>
-              Blahlsahdlkajsxlca
-            </DialogContentText> */}
             <TextField
-            //   autoFocus
+              //   autoFocus
+              value={this.state.email}
+              onChange={this.handleChange}
               margin="dense"
-              id="username"
-              label="Username"
+              id="email"
+              label="Email"
               type="string"
               fullWidth
             />
             <TextField
-            //   autoFocus
+              //   autoFocus
+              value={this.state.password}
+              onChange={this.handleChange}
               margin="dense"
               id="password"
               label="Password"
@@ -53,10 +82,18 @@ export default class FormDialog extends React.Component {
             />
           </DialogContent>
           <DialogActions>
-            <Button onClick={this.handleClose} color="primary">
+            <Button
+              onClick={this.handleFormSubmit}
+              // onSubmit={this.handleFormSubmit}
+              color="primary"
+            >
               LOGIN
             </Button>
-            <Button onClick={this.handleClose} color="primary">
+            <Button
+              onClick={this.handleFormSubmit}
+              // onSubmit={this.handleFormSubmit}
+              color="primary"
+            >
               SIGN UP
             </Button>
           </DialogActions>
