@@ -43,7 +43,7 @@ class Artists extends Component {
                     ))}
                   </div>
                 ) : (
-                  <h3>Loading</h3>
+                  <h3>  </h3>
                 )}
               </div>
             </div>
